@@ -1,14 +1,14 @@
-import React from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
+import React from "react";
 
-function PlantPage() {
+function PlantPage({handleDelete}) {
   return (
     <main>
       <NewPlantForm />
       <Search />
-      <PlantList />
+      <PlantList  handleDelete={handleDelete}/>
     </main>
   );
 }
