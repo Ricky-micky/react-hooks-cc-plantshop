@@ -18,7 +18,7 @@ function NewPlantForm() {
       price: price,
     };
 
-fetch(" http://localhost:6001/plants", {
+fetch("https://react-hooks-cc-plantshop-o5o0.onrender.com/plants", {
   method: "POST",
   headers: {
     "Content-Type": "Application/JSON",
