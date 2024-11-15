@@ -9,7 +9,7 @@ function App() {
   const [plantListing, setPlantListing] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:6001/plants")
+    fetch("https://react-hooks-cc-plantshop-o5o0.onrender.com/plants")
       .then((resp) => resp.json())
       .then((plants) => setPlantListing(plants));
   }, []);
