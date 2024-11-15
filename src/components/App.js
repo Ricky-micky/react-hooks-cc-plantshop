@@ -21,7 +21,7 @@ function App() {
 
   function handleDelete(id) {
     console.log(id);
-    fetch(`http://localhost:6001/plants/${id}`, {
+    fetch(`https://react-hooks-cc-plantshop-o5o0.onrender.com/plants/${id}`, {
       method: "DELETE",
     })
       .then((resp) => resp.json())
